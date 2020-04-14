@@ -6,7 +6,7 @@ body{
     margin:0 auto;
     background-color: #63a4ff;
     background-image: linear-gradient(315deg, #63a4ff 0%, #83eaf1 74%);
-    width: 60vw;
+    max-width:50vw;
     min-height:80vh;
     margin-top:5vh;
     margin-bottom:5vh;
@@ -19,6 +19,7 @@ body{
     border:3px solid lightblue;
     position:relative;
     height:auto;
+    width:100%;
     transition:height 3s ease-out-in;
     
 }
@@ -141,3 +142,9 @@ i.fa-plus{
     right:0;
     top:2px;
 }
+
+@media only screen and (min-width: 2000px) {
+    .trello{
+
+    }
+  }
