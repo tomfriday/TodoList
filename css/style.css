@@ -5,7 +5,7 @@ body{
 .trello{
     margin:0 auto;
     background-color: #63a4ff;
-    background-image: linear-gradient(315deg, #63a4ff 0%, #83eaf1 74%);
+    background-image: linear-gradient(315deg, #63a4ff 0%, #adcfff 74%);
     max-width:50vw;
     min-height:80vh;
     margin-top:5vh;
@@ -21,7 +21,6 @@ body{
     height:auto;
     width:100%;
     transition:height 3s ease-out-in;
-    
 }
 
 .trello h3{
@@ -31,13 +30,10 @@ body{
   
 }
 .trello h4{
-    
     font-size:small;
     font-weight: bold;
     border-bottom:1px solid red;
     width:50%;
-    
-    
 }
 /* column */
 
@@ -45,7 +41,6 @@ body{
     display:inline-block;
     width:30%;
     vertical-align:top;
-    
 }
 
 .column-name{
@@ -67,7 +62,6 @@ body{
     -moz-box-shadow: 0px 0px 1px 1px rgba(255,255,255,0.75);
     box-shadow: 0px 0px 1px 1px rgba(255,255,255,0.75);
     transition:height 3s ease-out;
-    
 }
 
 .request{
@@ -76,7 +70,7 @@ body{
     border-radius: 10px 10px 10px 10px;
     -moz-border-radius: 10px 10px 10px 10px;
     -webkit-border-radius: 0px 10px 10px 10px;
-    background-color:#83EAF1;
+    background-color:#adcfff;
     padding:10px;
     -webkit-box-shadow: 0px 0px 10px 7px rgba(255,255,255,0.75);
     -moz-box-shadow: 0px 0px 10px 7px rgba(255,255,255,0.75);
@@ -103,9 +97,8 @@ body{
     border-radius: 10px 10px 10px 10px;
     -moz-border-radius: 10px 10px 10px 10px;
     -webkit-border-radius: 0px 10px 10px 10px;
-    background-color:#83EAF1;
+    background-color:#adcfff;
     border:1px solid white;
-
 }
 ul,li{
     list-style-type: none;
@@ -132,19 +125,41 @@ i.fa-thumbtack{
     font-size:8px;
     color:lightsteelblue;
     transform:skewY(-30deg,30deg);
-    
-
 }
-i.fa-plus{
+
+/* icons */
+.fa-plus{
     color:black;
     font-size:9px;
     position:absolute;
     right:0;
     top:2px;
+    transition:transform 0.5s ease-out-in;
+    transition-delay: 0.2s;
 }
+.fa-plus:hover{
+    transform: scale(1.4,1.4);
+    cursor: pointer;
+}
+.fa-times{
+    position:absolute;
 
-@media only screen and (min-width: 2000px) {
-    .trello{
+    top:3px;
+    right:5px;
+    color:white;
+    font-size:9px;
+    transition:transform 0.5s ease-out-in;
+    transition-delay: 0.2s;
+}
+    
 
-    }
-  }
+   
+
+.fa-times:hover{
+    transform: scale(1.4,1.4);
+    
+}
+p{
+    margin:0;
+    padding:0;
+}
