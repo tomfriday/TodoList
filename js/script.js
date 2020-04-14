@@ -34,8 +34,6 @@ class Task{
     }
 }
 
-
-
 $(document).ready( function(){
 /*  Sortowanie  */
     $("#sort").sortable({connectWith:['.sortable,#sortable'],items: 'li', handle: $('.content'), containment: $('.trello') });
