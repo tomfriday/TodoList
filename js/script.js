@@ -1,5 +1,6 @@
 var requestId = 0;
 
+
 class Task {
 	constructor(requestName, columnId) {
 		this.requestName = requestName;
@@ -7,7 +8,8 @@ class Task {
 		this.requestId = requestId;
 		requestId++;
 		this.request;
-		self = this;
+    self = this;
+    
 	}
 
 	makeRequest() {
@@ -19,7 +21,8 @@ class Task {
 		var myList = $('.column#' + this.columnId).find('.content').find('ul');
 		/* var iconThumbtack = '<i class="fas fa-thumbtack"></i>'; */
 		myList.append(newTaskToFill);
-		this.request = $('.content').find('.request#' + this.requestId);
+    this.request = $('.content').find('.request#' + this.requestId);
+    console.log(this.request);
 		this.request.append(exitButton);
 		this.request.append(dateOutput);
 	}
@@ -33,20 +36,24 @@ class Task {
 		$(this.request).keypress(function(e) {
 			var textArea = $('.content').find('.request#' + self.requestId).find('textarea');
 			if (e.which == 13) {
-				textArea.replaceWith('<p>' + self.getValueFromTextArea() + '</p>');
+				textArea.replaceWith('<p class="text">' + self.getValueFromTextArea() + '</p>');
 			}
 		});
 	}
 	editRequest() {
-		var textValue = this.request.find('p').text();
+    
 		var self = this;
 		$(this.request).dblclick(function() {
+      textValue = self.request.find('.text').text();
 			console.log(textValue);
-			self.request.find('textarea').remove();
+      self.request.find('textarea').remove();
+      self.request.find('.date').remove();
 			self.request.append(
-				'<textarea rows="4"  class="textarea-css">' + self.request.find('p').text() + '</textarea>'
-			);
-			self.request.find('p').remove();
+        '<textarea rows="4"  placeholder="Type description of your task..." class="textarea-css">' + textValue + '</textarea>'
+      );
+    self.request.find('.text').remove();
+    self.request.append(dateOutput);
+      
 		});
 	}
 

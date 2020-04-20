@@ -105,7 +105,12 @@ body {
 	top: 5px;
 	left: 5px;
 }
-
+.column-2 .request{
+    background-color:orange;
+}
+.column-3 .request{
+    background-color:darkgreen;
+}
 textarea {
 	width: 100%;
 	min-height: 75px;
@@ -120,7 +125,8 @@ textarea {
 	padding: 5px;
 	margin-top: 15px;
 	font-size: 9px;
-	font-weight: bold;
+    font-weight: bold;
+    max-width:80%;
 }
 ul,
 li {
@@ -251,7 +257,9 @@ p {
 .date {
 	font-size: 10px;
 	color: white;
-	text-align: right;
+    text-align: right;
+    position:sticky;
+    bottom:0;
 }
 /* pulse */
 @keyframes shadow-pulse {
