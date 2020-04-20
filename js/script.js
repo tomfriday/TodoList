@@ -41,7 +41,7 @@ class Task {
 		});
 	}
 	editRequest() {
-    
+    var textValue;
 		var self = this;
 		$(this.request).dblclick(function() {
       textValue = self.request.find('.text').text();
