@@ -8,8 +8,7 @@ class Task {
 		this.requestId = requestId;
 		requestId++;
 		this.request;
-    self = this;
-    
+    this.textValue;
 	}
 
 	makeRequest() {
@@ -36,20 +35,18 @@ class Task {
 		$(this.request).keypress(function(e) {
 			var textArea = $('.content').find('.request#' + self.requestId).find('textarea');
 			if (e.which == 13) {
-				textArea.replaceWith('<p class="text">' + self.getValueFromTextArea() + '</p>');
+        textArea.replaceWith('<p class="text">' + self.getValueFromTextArea() + '</p>');
+        self.textValue = textArea.val();
 			}
 		});
 	}
 	editRequest() {
-    var textValue;
-		var self = this;
+    var self = this;
 		$(this.request).dblclick(function() {
-      textValue = self.request.find('.text').text();
-			console.log(textValue);
-      self.request.find('textarea').remove();
+		  self.request.find('textarea').remove();
       self.request.find('.date').remove();
 			self.request.append(
-        '<textarea rows="4"  placeholder="Type description of your task..." class="textarea-css">' + textValue + '</textarea>'
+        '<textarea rows="4"  placeholder="Type description of your task..." class="textarea-css">' + self.textValue	+ '</textarea>'
       );
     self.request.find('.text').remove();
     self.request.append(dateOutput);
