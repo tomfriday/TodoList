@@ -8,7 +8,7 @@ class Task {
 		this.requestId = requestId;
 		requestId++;
 		this.request;
-    this.textValue;
+    this.textValue = "";
 	}
 
 	makeRequest() {
