@@ -1,0 +1,49 @@
+/* Preloader*/
+@import url("animations.css");
+.preloader-wrapper {
+  width: 99vw;
+  height: 99vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.preloader,
+.preloader:before,
+.preloader:after {
+  background: lightblue;
+  -webkit-animation: button-animation 1s infinite ease-in-out;
+          animation: button-animation 1s infinite ease-in-out;
+  width: 12px;
+}
+
+.preloader:before,
+.preloader:after {
+  position: absolute;
+  content: '';
+}
+
+.preloader:before {
+  left: -20px;
+  -webkit-animation-delay: -0.32s;
+          animation-delay: -0.32s;
+}
+
+.preloader {
+  margin: 65px auto 40px;
+  -webkit-transform: translateZ(0);
+          transform: translateZ(0);
+  -webkit-animation-delay: -0.16s;
+          animation-delay: -0.16s;
+}
+
+.preloader:after {
+  left: 20px;
+}
+/*# sourceMappingURL=preloader.css.map */

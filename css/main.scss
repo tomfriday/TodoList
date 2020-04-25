@@ -1,0 +1,189 @@
+@import url('https://fonts.googleapis.com/css2?family=Gotu&display=swap');
+@import url('animations.css');
+@import url('mediaQueries.css');
+@import url('icons.css');
+@import url('preloader.css');
+
+@mixin margin-padding($margin,$padding) {
+	margin: $margin;
+	padding: $padding;
+}
+%crookedBorder-radius {
+	border-radius: 0px 10px 10px 10px;
+	-moz-border-radius: 0px 10px 10px 10px;
+	-webkit-border-radius: 0px 10px 10px 10px;
+}
+%border-radius {
+	border-radius: 10px 10px 10px 10px;
+	-moz-border-radius: 10px 10px 10px 10px;
+	-webkit-border-radius: 10px 10px 10px 10px;
+}
+%trelloGradient {
+	background-color: #63a4ff;
+	background-image: linear-gradient(315deg, #63a4ff 0%, #adcfff 74%);
+}
+%shadow {
+	-webkit-box-shadow: 10px 10px 0px -2px rgba(206, 227, 235, 0.52);
+	-moz-box-shadow: 10px 10px 0px -2px rgba(206, 227, 235, 0.52);
+	box-shadow: 10px 10px 0px -2px rgba(206, 227, 235, 0.52);
+}
+%centerElement {
+	margin: 0 auto;
+}
+
+$myFont: 'Gotu', sans-serif;
+
+body {
+	font-family: $myFont;
+}
+/* trello box */
+
+.trello {
+	margin: 0 auto;
+	@extend %trelloGradient;
+	@extend %shadow;
+	@extend %border-radius;
+	@include margin-padding(5vh 0 5vh 0,16px);
+	max-width: 70vw;
+	min-height: 80vh;
+	border: 3px solid lightblue;
+	position: relative;
+	transition: height 3s ease-out-in;
+	opacity: 0;
+}
+
+.trello h1 {
+	@include margin-padding(0 0 50px 0,0 );
+	color: white;
+	display: block;
+}
+
+.column-3 h4 {
+	border-bottom: 2px solid green;
+}
+.column-2 h4 {
+	border-bottom: 2px solid orange;
+}
+.column-1 h4 {
+	border-bottom: 2px solid lightblue;
+}
+.trello h4 {
+	@include margin-padding(0 0 50px 0,0 0 5px 0);
+	font-size: smaller;
+	font-weight: bold;
+	width: 30%;
+}
+
+/* column */
+
+.column {
+	display: inline-block;
+	width: 32.88%;
+	vertical-align: top;
+	@extend %centerElement;
+}
+.column-2 textarea {
+	background-color: orange;
+}
+.column-3 textarea {
+	background-color: green;
+}
+.column-name {
+	position: relative;
+}
+
+.column .content {
+	@include margin-padding(4px,10px);
+	@extend %border-radius;
+	background-color: white;
+	font-size: smaller;
+	text-align: left;
+	-webkit-box-shadow: 0px 0px 1px 1px rgba(255, 255, 255, 0.75);
+	-moz-box-shadow: 0px 0px 1px 1px rgba(255, 255, 255, 0.75);
+	box-shadow: 0px 0px 1px 1px rgba(255, 255, 255, 0.75);
+
+	/*  box-shadow: 7px 2px 5px -2px white;*/
+}
+
+.request {
+	width: 100%;
+	height: fit content;
+	@extend %crookedBorder-radius;
+	background-color: #adcfff;
+	-webkit-box-shadow: 0px 0px 10px 7px rgba(255, 255, 255, 0.75);
+	-moz-box-shadow: 0px 0px 10px 7px rgba(255, 255, 255, 0.75);
+	box-shadow: 0px 0px 10px 7px rgba(255, 255, 255, 0.75);
+	word-break: break-all;
+	position: relative;
+	@include margin-padding(15px 0 0 0,10px );
+}
+.request p {
+	@include margin-padding(0,10px 2px 2px 2px);
+	font-size: 10px;
+	font-weight: bold;
+}
+
+.request :first-child {
+	color: white;
+	max-width: 80%;
+}
+.request:hover {
+	cursor: pointer;
+}
+.buttonAddRequest input {
+	font-size: smaller;
+	border: 1px solid white;
+	position: absolute;
+	top: 5px;
+	left: 5px;
+}
+.column-2 .request {
+	background-color: orange;
+}
+.column-3 .request {
+	background-color: green;
+}
+
+/* lists styles*/
+ul,
+li {
+	list-style-type: none;
+	list-style-position: outside;
+	padding: 0;
+	margin: 0;
+}
+ul {
+	min-height: 200px;
+}
+
+textarea {
+	width: 100%;
+	min-height: 75px;
+	outline: none;
+	resize: none;
+	@extend %crookedBorder-radius;
+	@include margin-padding(15px 0 0 0,5px);
+	background-color: #adcfff;
+	border: 2px solid white;
+	color: white;
+	font-size: 9px;
+	font-weight: bold;
+}
+p {
+	margin: 0;
+	padding: 0;
+	color: white;
+}
+::placeholder {
+	font-size: 9px;
+	font-weight: bold;
+	color: white;
+}
+
+.date {
+	font-size: 10px;
+	color: white;
+	text-align: right;
+	position: sticky;
+	bottom: 0;
+}

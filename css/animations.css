@@ -1,0 +1,94 @@
+@-webkit-keyframes shadow-pulse {
+  0% {
+    -webkit-box-shadow: 0 0 0 0px rgba(255, 255, 255, 0.3);
+            box-shadow: 0 0 0 0px rgba(255, 255, 255, 0.3);
+  }
+  100% {
+    -webkit-box-shadow: 0 0 0 100px rgba(255, 255, 255, 0);
+            box-shadow: 0 0 0 100px rgba(255, 255, 255, 0);
+  }
+}
+
+@keyframes shadow-pulse {
+  0% {
+    -webkit-box-shadow: 0 0 0 0px rgba(255, 255, 255, 0.3);
+            box-shadow: 0 0 0 0px rgba(255, 255, 255, 0.3);
+  }
+  100% {
+    -webkit-box-shadow: 0 0 0 100px rgba(255, 255, 255, 0);
+            box-shadow: 0 0 0 100px rgba(255, 255, 255, 0);
+  }
+}
+
+@-webkit-keyframes float {
+  0% {
+    -webkit-box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.6);
+            box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.6);
+    -webkit-transform: translatey(0px);
+            transform: translatey(0px);
+  }
+  50% {
+    -webkit-box-shadow: 0 25px 15px 0px rgba(0, 0, 0, 0.2);
+            box-shadow: 0 25px 15px 0px rgba(0, 0, 0, 0.2);
+    -webkit-transform: translatey(-20px);
+            transform: translatey(-20px);
+  }
+  100% {
+    -webkit-box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.6);
+            box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.6);
+    -webkit-transform: translatey(0px);
+            transform: translatey(0px);
+  }
+}
+
+@keyframes float {
+  0% {
+    -webkit-box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.6);
+            box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.6);
+    -webkit-transform: translatey(0px);
+            transform: translatey(0px);
+  }
+  50% {
+    -webkit-box-shadow: 0 25px 15px 0px rgba(0, 0, 0, 0.2);
+            box-shadow: 0 25px 15px 0px rgba(0, 0, 0, 0.2);
+    -webkit-transform: translatey(-20px);
+            transform: translatey(-20px);
+  }
+  100% {
+    -webkit-box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.6);
+            box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.6);
+    -webkit-transform: translatey(0px);
+            transform: translatey(0px);
+  }
+}
+
+@-webkit-keyframes button-animation {
+  0%,
+  80%,
+  100% {
+    -webkit-box-shadow: 0 0 lightskyblue;
+            box-shadow: 0 0 lightskyblue;
+    height: 40px;
+  }
+  40% {
+    -webkit-box-shadow: 0 -30px lightblue;
+            box-shadow: 0 -30px lightblue;
+    height: 80px;
+  }
+}
+
+@keyframes button-animation {
+  0%,
+  80%,
+  100% {
+    -webkit-box-shadow: 0 0 lightskyblue;
+            box-shadow: 0 0 lightskyblue;
+    height: 40px;
+  }
+  40% {
+    -webkit-box-shadow: 0 -30px lightblue;
+            box-shadow: 0 -30px lightblue;
+    height: 80px;
+  }
+}
+/*# sourceMappingURL=animations.css.map */

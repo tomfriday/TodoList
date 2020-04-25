@@ -1,0 +1,35 @@
+$buttonAddColor: #63a4ff;
+.fa-plus {
+	font-size: 15px;
+	position: absolute;
+	right: 0;
+	top: 16px;
+	width: 30px;
+	height: 30px;
+	animation: shadow-pulse 2s infinite;
+	animation: float 2s infinite;
+	border-radius: 20px 20px 20px 20px;
+	text-align: center;
+	padding: 5px;
+	color: $buttonAddColor;
+}
+.fa-plus:hover {
+	cursor: pointer;
+}
+
+.fa-times {
+	position: absolute;
+	width: 20px;
+	height: 20px;
+	text-align: center;
+	top: 5px;
+	right: 5px;
+	color: white;
+	font-size: 9px;
+	transition: transform 0.5s ease-out-in;
+	transition-delay: 0.1s;
+}
+
+.fa-times:hover {
+	transform: scale(1.4, 1.4);
+}

@@ -1,0 +1,37 @@
+/* Preloader*/
+@import url('animations.css');
+.preloader-wrapper {
+	width: 99vw;
+	height: 99vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.preloader,
+.preloader:before,
+.preloader:after {
+	background: lightblue;
+	animation: button-animation 1s infinite ease-in-out;
+	width: 12px;
+}
+
+.preloader:before,
+.preloader:after {
+	position: absolute;
+	content: '';
+}
+
+.preloader:before {
+	left: -20px;
+	animation-delay: -0.32s;
+}
+
+.preloader {
+	margin: 65px auto 40px;
+	transform: translateZ(0);
+	animation-delay: -0.16s;
+}
+
+.preloader:after {
+	left: 20px;
+}

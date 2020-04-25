@@ -1,0 +1,43 @@
+.fa-plus {
+  font-size: 15px;
+  position: absolute;
+  right: 0;
+  top: 16px;
+  width: 30px;
+  height: 30px;
+  -webkit-animation: shadow-pulse 2s infinite;
+          animation: shadow-pulse 2s infinite;
+  -webkit-animation: float 2s infinite;
+          animation: float 2s infinite;
+  border-radius: 20px 20px 20px 20px;
+  text-align: center;
+  padding: 5px;
+  color: #63a4ff;
+}
+
+.fa-plus:hover {
+  cursor: pointer;
+}
+
+.fa-times {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  text-align: center;
+  top: 5px;
+  right: 5px;
+  color: white;
+  font-size: 9px;
+  -webkit-transition: -webkit-transform 0.5s ease-out-in;
+  transition: -webkit-transform 0.5s ease-out-in;
+  transition: transform 0.5s ease-out-in;
+  transition: transform 0.5s ease-out-in, -webkit-transform 0.5s ease-out-in;
+  -webkit-transition-delay: 0.1s;
+          transition-delay: 0.1s;
+}
+
+.fa-times:hover {
+  -webkit-transform: scale(1.4, 1.4);
+          transform: scale(1.4, 1.4);
+}
+/*# sourceMappingURL=icons.css.map */
