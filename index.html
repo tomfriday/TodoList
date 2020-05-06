@@ -4,70 +4,65 @@
 <!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
 <!--[if gt IE 8]><!-->
 <html class="no-js">
-  <!--<![endif]-->
-  <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title></title>
-    <meta name="description" content="" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+<!--<![endif]-->
 
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css"
-    />
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title></title>
+  <meta name="description" content="" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <link
-      rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
-      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
-      crossorigin="anonymous"
-    />
-    <link rel="stylesheet" href="css/main.css" />
-  </head>
-  <body>
-    <div class="preloader-wrapper"><div class="preloader"></div></div>
-    <div class="container">
-      <div class="trello">
-        <h1>Trello</h1>
-        <!-- <div class="buttonAddRequest"><input id="buttonAdd" type="button" value="Dodaj zadanie"></div>-->
-        <div class="column text-center column-1" id="1">
-          <div class="content">
-            <div class="column-name"><h4>To Do</h4></div>
-            <ul id="sort"></ul>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css" />
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous" />
+  <link rel="stylesheet" href="css/main.css" />
+</head>
+
+<body>
+  <div class="preloader-wrapper">
+    <div class="preloader"></div>
+  </div>
+  <div class="container">
+    <div class="trello">
+      <h1>Trello</h1>
+      <!-- <div class="buttonAddRequest"><input id="buttonAdd" type="button" value="Dodaj zadanie"></div>-->
+      <div class="column text-center column-1" id="1">
+        <div class="content">
+          <div class="column-name">
+            <h4>To Do</h4>
           </div>
+          <ul id="sort"></ul>
         </div>
-        <div class="column text-center column-2" id="2">
-          <div class="content">
-            <div class="column-name"><h4>In Progess</h4></div>
-            <ul id="sortable">
-              <li></li>
-            </ul>
+      </div>
+      <div class="column text-center column-2" id="2">
+        <div class="content">
+          <div class="column-name">
+            <h4>In Progess</h4>
           </div>
+          <ul id="sortable">
+            <li></li>
+          </ul>
         </div>
-        <div class="column text-center column-3" id="3">
-          <div class="content">
-            <div class="column-name"><h4>Done</h4></div>
-            <ul class="sortable"></ul>
+      </div>
+      <div class="column text-center column-3" id="3">
+        <div class="content">
+          <div class="column-name">
+            <h4>Done</h4>
           </div>
+          <ul class="sortable"></ul>
         </div>
       </div>
     </div>
-    <script
-      src="https://kit.fontawesome.com/5e1efa66c8.js"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://code.jquery.com/jquery-3.5.0.min.js"
-      integrity="sha256-xNzN2a4ltkB44Mc/Jz3pT4iU1cmeR0FkXs4pru/JxaQ="
-      crossorigin="anonymous"
-    ></script>
-    <script
-      type="text/javascript"
-      src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.11.1/jquery-ui.min.js"
-    ></script>
-    <script src="js/task.js" async defer></script>
-    <script src="js/date.js" async defer></script>
-    <script src="js/script.js" async defer></script>
-  </body>
+  </div>
+  <script src="https://kit.fontawesome.com/5e1efa66c8.js" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.5.0.min.js"
+    integrity="sha256-xNzN2a4ltkB44Mc/Jz3pT4iU1cmeR0FkXs4pru/JxaQ=" crossorigin="anonymous"></script>
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.1/jquery-ui.min.js"></script>
+  <script src="js/task.js" async defer></script>
+  <script src="js/date.js" async defer></script>
+  <script src="js/script.js" async defer></script>
+</body>
+
 </html>
