@@ -213,4 +213,40 @@ p {
   position: sticky;
   bottom: 0;
 }
+
+
+
+/* media */
+@media only screen and (max-width: 1000px) {
+  .trello {
+    width: 99vw;
+    margin: 0 auto;
+  }
+  .column {
+    display: block;
+    width: 100%;
+    margin-top: 30px;
+  }
+  .column {
+    padding: 20px;
+  }
+  .content {
+    padding: 40px;
+  }
+  .request {
+    padding: 20px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .body {
+    margin: 0;
+    padding: 0;
+  }
+  .trello {
+    max-width: 93vw;
+    margin: 0;
+  }
+}
+
 /*# sourceMappingURL=main.css.map */

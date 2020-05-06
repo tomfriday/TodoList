@@ -51,8 +51,8 @@ class Task {
       self.request.find(".date").remove();
       self.request.append(
         '<textarea rows="4"  placeholder="Type description of your task..." class="textarea-css">' +
-          self.textValue +
-          "</textarea>"
+        self.textValue +
+        "</textarea>"
       );
       self.request.find(".text").remove();
       self.request.append(dateOutput);
