@@ -7,4 +7,4 @@
 
 <h5> live check 
 
-https://tiny.pl/7m58m
+https://tomfriday.github.io/TodoList/
